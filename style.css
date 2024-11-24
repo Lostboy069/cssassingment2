@@ -1,0 +1,247 @@
+*{
+    font-family: "Open Sans", sans-serif;
+}
+body {
+    background-color: #F9FAFB; 
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+.header .logo img {
+    height: 40px;
+    width: 40px;
+}
+.header .logo span {
+    color: #E91E63;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+.header .actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.header .actions button {
+    background: none;
+    border: none;
+    color: #4A5568;
+    cursor: pointer;
+    font-size: 16px;
+}
+.header .actions .signup {
+    background-color: #E91E63;
+    border-radius: 9999px;
+    color: #FFFFFF;
+    padding: 8px 16px;
+}
+.main {
+    background-color: #F9FAFB;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+    padding: 80px 24px;
+    text-align: left;
+}
+.main h1 {
+    color: #000000;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    position: relative;
+    left: 42;
+    top: 35;
+}
+ .sal{
+    padding-left: 20px;
+    border: solid 1px black;
+    border-radius: 7px;
+    margin-left: 10px;
+}
+
+.search-bar {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    align-items: center;   
+    max-width: 640px;
+    overflow: hidden;
+    width: 100%;
+    height: 60px;
+    position: absolute;  
+    left: 60; 
+    top: 60%;  
+    transform: translateY(-50%); 
+    
+}
+
+.search-bar input {
+    border: none;
+    flex-grow: 1;
+    padding: 12px 16px;
+    font-size: 14px; 
+    outline: none;
+    padding-left: 2px;
+}
+button{
+    padding-left: 200px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    color: #E91E63;
+    cursor: pointer;
+    
+}
+
+ .search-bar .find-food {
+    background-color: #E91E63;
+    color: #FFFFFF;
+    padding: 8px 16px; 
+    border-radius: 8px; 
+    font-size: 14px; 
+    margin-left: 20px; 
+} 
+
+
+.panda-image {
+    display: none;
+}
+@media (min-width: 768px) {
+    .search-bar {
+        flex-direction: row;
+    }
+    .panda-image {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: -290;
+    }
+}
+
+
+.white-section {
+    background-color: #FFFFFF;
+    padding: 40px 24px; 
+    margin: 0px 0; 
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.white-section h2 {
+    color: #000000;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    margin-left: 20px;
+}
+
+.white-section p {
+    color: #4A5568;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+.cook{
+    background-color: #FFFFFF;
+    height: 400px;
+    width: 1350px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.cook img{
+    width: auto; 
+    height: auto; 
+    position: relative; 
+    top: -413px;
+    left: -288px;
+    transform:scale(0.7);
+}
+
+.text-box {
+    position: absolute; 
+    bottom: -850px; 
+    left: 70px; 
+    background-color: rgb(255, 255, 255); 
+    color: #000000; 
+    padding: 8px 18px; 
+    border-radius: 20px; 
+    font-size: 17px; 
+    max-width: 80%; 
+    height: 320px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.Get{
+    padding: 0%;
+    background-color: #E91E63;
+    color: #FFFFFF;
+    padding: 14px 16px; 
+    border-radius: 10px; 
+    font-size: 14px; 
+    border: none;
+}
+.faltu {
+    padding-left: 80px;
+}
+
+.container {
+    display: flex; /* Aligns the boxes in a row */
+    justify-content: space-around; /* Distributes space between the boxes */
+    gap: 5px; /* Adds spacing between boxes */
+}
+
+.box {
+    width: 270px; /* Set the width of each box */
+    height: 252px; /* Set the height of each box */
+    overflow: hidden; /* Hides any part of the image that exceeds the box */
+    border-radius: 8px; /* Optional: Adds rounded corners to the boxes */
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+}
+
+.box img {
+    width: 100%; /* Makes the image take the full width of the box */
+    height: 100%; /* Makes the image take the full height of the box */
+    object-fit: cover; /* Ensures the image covers the box without distortion */
+    transition: transform 0.3s ease; /* Adds smooth zoom-in transition to the image */
+}
+
+/* Zoom effect on hover */
+.box:hover img {
+    transform: scale(1.1); /* Zooms in the image by 10% */
+}
+
+.box:hover {
+    transform: translateY(-5px); /* Slight lift effect when hovered */
+}
+
+.btn {
+    position: absolute; /* Positions the button inside the box */
+    bottom: 10px; /* 10px from the bottom of the box */
+    left: 10px; /* 10px from the left of the box */
+    background-color: #ffffff; /* Button color */
+    color: #000000; /* White text color */
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Smooth color transition */
+    font-weight: bolder;
+}
